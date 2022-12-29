@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func GH_Actions_Demo() string {
-	return "It's amazing learning Github Actions with #90DaysOfdevOps"
+	return "Welcome to Github Actions"
 }
 
 func main() {
