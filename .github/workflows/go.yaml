@@ -24,4 +24,15 @@ jobs:
     - name: Test
       run: go test -v ./... 
 
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Deploy to Docker Registry
+      uses: docker/build-push-action@v3
+      with:
+        username: ${{secret.DOCKER_USER}}
+        password: ${{secret.DOCKER_PASSWORD}}
+        repository: santoshdts/my_repo
+        push: true
+        tag: santoshdts/my_repo:latest
 
