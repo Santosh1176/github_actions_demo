@@ -37,6 +37,7 @@ jobs:
     - name: Deploy to Docker Registry
       uses: docker/build-push-action@v3
       with:
+        context: .
         push: true
         tags: santoshdts/my_repo:latest
 
