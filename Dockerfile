@@ -6,7 +6,7 @@ COPY . /app
 
 RUN go build main
 
-FROM alipne:latest
+FROM alpine:latest
 
 WORKDIR /root
 
