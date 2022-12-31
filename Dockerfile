@@ -10,6 +10,6 @@ FROM alpine:latest
 
 WORKDIR /root
 
-COPY --from=build /pkg /root
+COPY --from=build /pkg/main /root
 
 ENTRYPOINT [ "./main"]
