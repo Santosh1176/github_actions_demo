@@ -33,10 +33,10 @@ jobs:
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         registry: docker.io/santoshdts
-        
+
     - name: Deploy to Docker Registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tag: santoshdts/my_repo:latest
+        tag: santoshdst/my_repo:latest
 
