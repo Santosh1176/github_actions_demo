@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN go build main
+RUN go build -o main
 
 FROM alpine:latest
 
