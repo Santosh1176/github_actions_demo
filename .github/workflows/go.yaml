@@ -38,6 +38,6 @@ jobs:
       with:
         context: .
         push: true
-        tags: santoshdts/my_repo:latest
+        tags: santoshdts/test_action:latest
         
 
