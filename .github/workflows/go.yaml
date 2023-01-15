@@ -40,4 +40,7 @@ jobs:
         push: true
         tags: santoshdts/test_action:latest
         
-
+    - name: Configuring and testing the Installation
+      run: |
+        kubectl cluster-info --context kind-k8s-playground
+        kubectl get nodes 
